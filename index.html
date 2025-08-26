@@ -1,0 +1,166 @@
+<!--
+  ==========================================================================================================
+  Project       : জরুরি সেবা ডিরেক্টরি | বাংলাদেশের জরুরি সেবা নম্বর ও প্রতিষ্ঠানের এক জায়গায় সমাধান।
+  Author        : Abdullah Al Mamun (aamamunszone)
+  Created on    : 26-08-2025
+  Description   : A Clean, Scalable, Responsive, SEO-optimized Landing Page of জরুরি সেবা ডিরেক্টরি।
+  Version       : 1.0.0
+  ==========================================================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="bn-BD">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="বাংলাদেশের জরুরি সেবা নম্বর ও প্রতিষ্ঠানের এক জায়গায় সমাধান। পুলিশ, ফায়ার সার্ভিস, অ্যাম্বুলেন্স, হাসপাতাল, বিদ্যুৎ, গ্যাস, পানি, হটলাইনসহ প্রয়োজনীয় সব সেবার যোগাযোগ নম্বর সহজে খুঁজে পান।"
+    />
+    <meta
+      name="keywords"
+      content="জরুরি সেবা, জরুরি নম্বর, পুলিশ, ফায়ার সার্ভিস, অ্যাম্বুলেন্স, হাসপাতাল, ডাক্তার, হটলাইন, বিদ্যুৎ, গ্যাস, পানি, emergency services, emergency numbers, emergency hotline"
+    />
+    <meta name="author" content="Abdullah Al Mamun" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./public/assets/images/favicons/emergency-hotline-favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts (Example: Google Fonts, Font Awesome etc...) -->
+    <!-- Google Fonts: Loaded via tailwind.css -->
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CDNs -->
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Stylesheets -->
+    <!-- Tailwind CSS Styles -->
+    <link rel="stylesheet" href="./src/styles/tailwind.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+
+    <!-- Title -->
+    <title>জরুরি সেবা ডিরেক্টরি | বাংলাদেশ</title>
+  </head>
+  <body>
+    <!-- ================================================== -->
+    <!-- Header Area -->
+    <!-- ================================================== -->
+    <header
+      class="container mx-auto flex justify-between items-center max-w-[97%] sm:max-w-[95%] md:max-w-[93%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%] my-2 sm:my-3 md:my-4 lg:my-5 xl:my-6 2xl:my-7"
+    >
+      <!-- Logo Section -->
+      <div
+        class="flex justify-between items-center gap-1 sm:gap-1.5 lg:gap-2 2xl:gap-2.5"
+      >
+        <img
+          class="max-w-[24px] sm:max-w-[28px] md:max-w-[32px] lg:max-w-[36px] xl:max-w-[42px] 2xl:max-w-[48px]"
+          src="./public/assets/images/logos/emergency-hotline-logo.png"
+          alt="Emergency Hotline Logo"
+        />
+        <h1
+          class="text-[#006747] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-xl font-extrabold leading-none"
+        >
+          Emergency <br />
+          Service
+        </h1>
+      </div>
+      <!-- User Activity Info Section -->
+      <div
+        class="flex justify-between items-center gap-[8px] sm:gap-[10px] md:gap-[12px] lg:gap-[14px] xl:gap-[16px] 2xl:gap-[18px]"
+      >
+        <!-- Heart Count -->
+        <div
+          class="flex justify-center items-center gap-1 sm:gap-1.5 lg:gap-2 2xl:gap-2.5 bg-[#41FF6B]/10 px-[10px] sm:px-[14px] md:px-[16px] lg:px-[18px] xl:px-5 2xl:px-6 py-[2px] sm:py-[3px] md:py-[4px] lg:py-[5px] xl:py-[6px] 2xl:py-2 rounded-full"
+        >
+          <span class="text-[12px] sm:text-sm md:text-base font-extrabold"
+            >0</span
+          >
+          <img
+            class="max-w-[18px] sm:max-w-[20px] md:max-w-[22px] lg:max-w-[24px] xl:max-w-[28px] 2xl:max-w-[30px]"
+            src="./public/assets/images/icons/heart.png"
+            alt="Heart Icon"
+          />
+        </div>
+        <!-- Coin Count -->
+        <div
+          class="flex justify-center items-center gap-1 sm:gap-1.5 lg:gap-2 2xl:gap-2.5 bg-[#41FF6B]/10 px-[10px] sm:px-[14px] md:px-[16px] lg:px-[18px] xl:px-5 2xl:px-6 py-[2px] sm:py-[3px] md:py-[4px] lg:py-[5px] xl:py-[6px] 2xl:py-2 rounded-full"
+        >
+          <span class="text-[12px] sm:text-sm md:text-base font-extrabold"
+            >0</span
+          >
+          <img
+            class="max-w-[18px] sm:max-w-[20px] md:max-w-[22px] lg:max-w-[24px] xl:max-w-[28px] 2xl:max-w-[30px]"
+            src="./public/assets/images/icons/coin.png"
+            alt="Coin Icon"
+          />
+        </div>
+        <!-- Copy Count -->
+        <div
+          class="flex justify-center items-center gap-1 sm:gap-1.5 lg:gap-2 2xl:gap-2.5 bg-[#00A63E] text-white px-[10px] sm:px-[14px] md:px-[16px] lg:px-[18px] xl:px-5 2xl:px-6 py-[2px] sm:py-[3px] md:py-[4px] lg:py-[5px] xl:py-[6px] 2xl:py-2 rounded-full"
+        >
+          <span class="text-[12px] sm:text-sm lg:text-base font-medium">0</span>
+          <span class="text-[12px] sm:text-sm lg:text-base">Copy</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================================================== -->
+    <!-- Main Area -->
+    <!-- ================================================== -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="text-white bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] py-1 sm:py-2 md:py-3 lg:py-4 xl:py-5 2xl:py-6"
+      >
+        <div
+          class="container mx-auto max-w-[97%] sm:max-w-[95%] md:max-w-[93%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%] flex flex-col justify-between items-center gap-1.5 sm:gap-2 lg:gap-2.5 2xl:gap-3"
+        >
+          <img
+            class="max-w-[30px] sm:max-w-[40px] md:max-w-[50px] lg:max-w-[60px] xl:max-w-[70px] 2xl:max-w-[80px]"
+            src="./public/assets/images/logos/emergency-hotline-logo-dark.png"
+            alt="Emergency Hotline Dark Logo"
+          />
+          <h1
+            class="text-[12px] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-extrabold whitespace-nowrap"
+          >
+            জরুরি সেবা ডিরেক্টরি
+          </h1>
+          <p
+            class="text-[10px] sm:text-[12px] md:text-sm lg:text-base xl:text-lg 2xl:text-[20px] text-center font-medium"
+          >
+            Government Emergency Services at Your Fingertip - A Project by
+            Government of the People's Republic of Bangladesh.
+          </p>
+        </div>
+      </section>
+      <!-- Body Section -->
+      <section></section>
+    </main>
+
+    <!-- Main JS Script -->
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

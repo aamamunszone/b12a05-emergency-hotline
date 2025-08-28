@@ -1,4 +1,4 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
+## ASSIGNMENT-05 (Emergency Hotline)
 
 ### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
 
@@ -8,16 +8,16 @@
 
 ---
 
-## ✅ Main Requirements (50 Marks)
+## 👉 Main Requirements (50 Marks) 👈
 
-### 1. Navbar
+### 1. Navbar ✅
 
 - **Website name & logo** on the left as Figma
 - **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
 
 ---
 
-### 2. Hero Section
+### 2. Hero Section ✅
 
 - **Background Gradient** in the Whole Section
 - **A Relevant Logo** at the top-center
@@ -26,7 +26,7 @@
 
 ---
 
-### 2. Main Section
+### 2. Main Section ✅
 
 This Section will have layout as figma
 
@@ -51,7 +51,7 @@ This Section will have layout as figma
  </tr>
 </table>
 
-### Emergency Hotline Section
+### Emergency Hotline Section ✅
 
 - **Show Minimum 6 cards**. Each card will contain:
   - Icon or Image
@@ -62,7 +62,7 @@ This Section will have layout as figma
   - 💗 icon at left
   - **2 buttons** at the bottom: Copy and Call with icons as Figma
 
-### History Section
+### History Section ✅
 
 - **A white Background** in the whole section
 - **History Title with icon** at the top-left as Figma
@@ -70,17 +70,17 @@ This Section will have layout as figma
 
 ---
 
-### 3. Responsiveness (Done)
+### 3. Responsiveness ✅
 
-- Responsive for :  
-  `sm: md: lg: xl: 2xl:`  
-  `sm: lg: 2xl:`
+- Responsive done with Tailwind CSS :
+  - `base sm: md: lg: xl: 2xl:`
+  - `base sm: lg: 2xl:`
 
 ---
 
-## Functionalities
+## 👉 Functionalities 👈
 
-### 4. Heart Icons
+### 4. Heart Icons ✅
 
 - Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
 

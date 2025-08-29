@@ -74,12 +74,12 @@ const noHistory = getId('no-history');
 
 const servicesBtn = getId('services-btn');
 // console.log(servicesBtn);
-const servicesSection = getId('services-section')
+const servicesSection = getId('services-section');
 // console.log(servicesSection);
 
 const historyBtn = getId('history-btn');
 // console.log(historyBtn);
-const historySection = getId('history-section')
+const historySection = getId('history-section');
 console.log(historySection);
 
 // ==================================================
@@ -204,11 +204,27 @@ for (const btn of copyBtns) {
 
       // Modal Down from Top
       copyModal.classList.remove('opacity-0', '-top-20'); // -top-20(80px) rakha hoyeche karon display er upor theke asbe mone hobe / top-0 rakhle display er shuru theke asbe mone hobe
-      copyModal.classList.add('opacity-100', 'top-3', 'sm:top-4', 'md:top-5', 'lg:top-6', 'xl:top-7', '2xl:top-8'); // opacity er karone blur hoye nambee
+      copyModal.classList.add(
+        'opacity-100',
+        'top-3',
+        'sm:top-4',
+        'md:top-5',
+        'lg:top-6',
+        'xl:top-7',
+        '2xl:top-8'
+      ); // opacity er karone blur hoye nambee
 
       // Modal Up from Down
       setTimeout(() => {
-        copyModal.classList.remove('opacity-100', 'top-3', 'sm:top-4', 'md:top-5', 'lg:top-6', 'xl:top-7', '2xl:top-8');
+        copyModal.classList.remove(
+          'opacity-100',
+          'top-3',
+          'sm:top-4',
+          'md:top-5',
+          'lg:top-6',
+          'xl:top-7',
+          '2xl:top-8'
+        );
         copyModal.classList.add('opacity-0', '-top-20');
       }, 1500); // 1.5s aaa ghotbe
     }
@@ -347,9 +363,9 @@ callNowBtn.addEventListener('click', function (e) {
 servicesBtn.addEventListener('click', function (e) {
   servicesSection.classList.remove('hidden');
   historySection.classList.add('hidden');
-})
+});
 
 historyBtn.addEventListener('click', function (e) {
   historySection.classList.remove('hidden');
   servicesSection.classList.add('hidden');
-})
+});

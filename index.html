@@ -48,12 +48,6 @@
     />
     <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- daisyUI CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
 
     <!-- Stylesheets -->
     <!-- Tailwind CSS Styles -->
@@ -71,6 +65,7 @@
     <header
       class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-md transition-all duration-300"
     >
+      <!-- Header container -->
       <div
         class="container mx-auto flex justify-between items-center max-w-[97%] sm:max-w-[95%] md:max-w-[93%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%] py-2 sm:py-3 md:py-4 lg:py-5 xl:py-6 2xl:py-7"
       >
@@ -94,7 +89,7 @@
         <div
           class="flex justify-between items-center gap-[8px] sm:gap-[10px] md:gap-[12px] lg:gap-[14px] xl:gap-[16px] 2xl:gap-[18px]"
         >
-          <!-- Heart Count -->
+          <!-- Heart -->
           <div
             class="flex justify-center items-center gap-1 sm:gap-1.5 lg:gap-2 2xl:gap-2.5 bg-[#41FF6B]/10 px-[10px] sm:px-[14px] md:px-[16px] lg:px-[18px] xl:px-5 2xl:px-6 py-[2px] sm:py-[3px] md:py-[4px] lg:py-[5px] xl:py-[6px] 2xl:py-2 rounded-full"
           >
@@ -110,7 +105,7 @@
               alt="Heart Icon"
             />
           </div>
-          <!-- Coin Count -->
+          <!-- Coin -->
           <div
             class="flex justify-center items-center gap-1 sm:gap-1.5 lg:gap-2 2xl:gap-2.5 bg-[#41FF6B]/10 px-[10px] sm:px-[14px] md:px-[16px] lg:px-[18px] xl:px-5 2xl:px-6 py-[2px] sm:py-[3px] md:py-[4px] lg:py-[5px] xl:py-[6px] 2xl:py-2 rounded-full"
           >
@@ -126,11 +121,13 @@
               alt="Coin Icon"
             />
           </div>
-          <!-- Copy Count -->
+          <!-- Copy -->
           <div
             class="flex justify-center items-center gap-1 sm:gap-1.5 lg:gap-2 2xl:gap-2.5 bg-[#00A63E] text-white px-[10px] sm:px-[14px] md:px-[16px] lg:px-[18px] xl:px-5 2xl:px-6 py-[2px] sm:py-[3px] md:py-[4px] lg:py-[5px] xl:py-[6px] 2xl:py-2 rounded-full"
           >
-            <span class="text-[12px] sm:text-sm lg:text-base font-medium" id="header-copy-num"
+            <span
+              class="text-[12px] sm:text-sm lg:text-base font-medium"
+              id="header-copy-num"
               >0</span
             >
             <span class="text-[12px] sm:text-sm lg:text-base">Copy</span>
@@ -152,22 +149,38 @@
         <div
           class="container mx-auto max-w-[97%] sm:max-w-[95%] md:max-w-[93%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%] flex flex-col justify-between items-center gap-1.5 sm:gap-2 lg:gap-2.5 2xl:gap-3"
         >
+          <!-- Hero Image -->
           <img
             class="max-w-[38px] sm:max-w-[48px] md:max-w-[58px] lg:max-w-[68px] xl:max-w-[78px] 2xl:max-w-[88px]"
             src="./public/assets/images/logos/emergency-hotline-logo-dark.png"
             alt="Emergency Hotline Dark Logo"
           />
+          <!-- Hero Heading -->
           <h1
             class="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] 2xl:text-[28px] font-extrabold whitespace-nowrap"
           >
             জরুরি সেবা ডিরেক্টরি
           </h1>
+          <!-- Hero content -->
           <p
             class="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] text-center font-medium"
           >
             Government Emergency Services at Your Fingertip - A Project by
             Government of the People's Republic of Bangladesh.
           </p>
+          <!-- Hero Moving Headline -->
+          <div
+            class="w-[90%] overflow-hidden bg-transparent text-[yellow] text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[16px] text-center py-2"
+          >
+            <div
+              class="whitespace-nowrap inline-block animate-[marquee_20s_linear_infinite]"
+            >
+              🚨 দুর্ঘটনা, অসুস্থতা বা যেকোনো হঠাৎ প্রয়োজন - সময় নষ্ট নয়, আমরা
+              সবসময় প্রস্তুত &nbsp; | &nbsp; 📞 এক কলেই পৌঁছে যাবো আপনার দরজায়
+              দ্রুততম সেবাসহ &nbsp; | &nbsp; 🤝 আমাদের অঙ্গীকার: ভরসা, দ্রুত
+              রেসপন্স, আর নিরবচ্ছিন্ন সহায়তা ।
+            </div>
+          </div>
         </div>
       </section>
       <!-- -------------------------------------------------- -->
@@ -176,7 +189,7 @@
       <section
         class="bg-[#F5FFF6] py-2 sm:py-3 md:py-4 lg:py-5 xl:py-6 2xl:py-7"
       >
-        <!--  gap-1 sm:gap-2 md:gap-3 lg:gap-4 xl:gap-5 2xl:gap-6 -->
+        <!-- Body Container -->
         <div
           class="container mx-auto max-w-[97%] sm:max-w-[95%] md:max-w-[93%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%] grid grid-cols-1 sm:grid-cols-9 lg:grid-cols-12 gap-1 sm:gap-2 md:gap-3 lg:gap-4 xl:gap-5 2xl:gap-6"
         >
@@ -786,12 +799,21 @@
     </main>
 
     <!-- ================================================== -->
-    <!-- Global Modal Area -->
+    <!-- Footer Area -->
+    <!-- ================================================== -->
+    <footer
+      class="bg-[#D6F0DA] text-[blue] font-medium font-mono py-6 text-center text-sm"
+    >
+      <p>&COPY; 2025 জরুরি সেবা। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <!-- ================================================== -->
+    <!-- Modals -->
     <!-- ================================================== -->
     <!-- -------------------------------------------------- -->
     <!-- Calling Modal -->
     <!-- -------------------------------------------------- -->
-    <!-- Permitted Call -->
+    <!-- Permitted Call Modal -->
     <div
       class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden justify-center items-center"
       id="permitted-call-modal"
@@ -859,7 +881,7 @@
       </div>
     </div>
 
-    <!-- Not Permitted Call -->
+    <!-- Not Permitted Call Modal -->
     <div
       class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden justify-center items-center"
       id="not-permitted-call-modal"
@@ -938,12 +960,10 @@
     <!-- -------------------------------------------------- -->
     <!-- Copy Modal -->
     <!-- -------------------------------------------------- -->
-
-    <div 
-       class="fixed left-1/2 transform -translate-x-1/2 transition-all duration-500 ease-in-out 
-       bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 
-       opacity-0 -top-20" id="copy-modal" >
-  </div>
+    <div
+      class="fixed bg-[#D6F0DA] px-6 py-3 rounded-lg shadow-lg left-1/2 transform -translate-x-1/2 transition-all duration-500 ease-in-out z-50 opacity-0 -top-20"
+      id="copy-modal"
+    ></div>
 
     <!-- Main JS Script -->
     <script src="./src/js/main.js"></script>

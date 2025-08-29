@@ -72,6 +72,16 @@ const clearBtn = getId('clear-btn');
 const noHistory = getId('no-history');
 // console.log(noHistory);
 
+const servicesBtn = getId('services-btn');
+// console.log(servicesBtn);
+const servicesSection = getId('services-section')
+// console.log(servicesSection);
+
+const historyBtn = getId('history-btn');
+// console.log(historyBtn);
+const historySection = getId('history-section')
+console.log(historySection);
+
 // ==================================================
 // Current Service Info (Done ✅)
 // ==================================================
@@ -184,7 +194,7 @@ for (const btn of copyBtns) {
 
     // Copy Modal
     function showCopyModal(currentServiceNum) {
-      navigator.clipboard.writeText(currentServiceNum); // Number Copy kore rakhlam, onno upayeow kora jay - eti updated
+      navigator.clipboard.writeText(currentServiceNum); // Number Copy kore rakhlam, onno upayeow kora jay - eti updated . Note: eti shudhu HTTPS aaa kaj korbe, HTTP te korbe na
 
       // Modal er Text with Design
       copyModal.innerHTML =
@@ -194,11 +204,11 @@ for (const btn of copyBtns) {
 
       // Modal Down from Top
       copyModal.classList.remove('opacity-0', '-top-20'); // -top-20(80px) rakha hoyeche karon display er upor theke asbe mone hobe / top-0 rakhle display er shuru theke asbe mone hobe
-      copyModal.classList.add('opacity-100', 'top-8'); // opacity er karone blur hoye nambee
+      copyModal.classList.add('opacity-100', 'top-3', 'sm:top-4', 'md:top-5', 'lg:top-6', 'xl:top-7', '2xl:top-8'); // opacity er karone blur hoye nambee
 
       // Modal Up from Down
       setTimeout(() => {
-        copyModal.classList.remove('opacity-100', 'top-8');
+        copyModal.classList.remove('opacity-100', 'top-3', 'sm:top-4', 'md:top-5', 'lg:top-6', 'xl:top-7', '2xl:top-8');
         copyModal.classList.add('opacity-0', '-top-20');
       }, 1500); // 1.5s aaa ghotbe
     }
@@ -312,10 +322,10 @@ callNowBtn.addEventListener('click', function (e) {
   // Fixed HTML structure for proper display
   callHistoryCard.innerHTML = `
     <div class="flex-1">
-      <h3 class="font-semibold text-sm leading-tight">${currentServiceName}</h3>
+      <h3 class="font-semibold base sm:text-[10px] md:text-[12px] lg:text-[12px] xl:text-xs 2xl:text-sm leading-tight">${currentServiceName}</h3>
       <p class="text-sm text-gray-600 mt-1">Hotline: ${currentServiceNum}</p>
     </div>
-    <div class="text-right text-xs text-gray-500 flex-shrink-0">
+    <div class="text-right text-sm sm:text-xs md:text-sm lg:text-xs xl:text-sm text-gray-500 flex-shrink-0">
       <p>${new Date().toLocaleDateString()}</p>
       <p>${new Date().toLocaleTimeString()}</p>
     </div>
@@ -330,3 +340,16 @@ callNowBtn.addEventListener('click', function (e) {
     noHistory.style.display = 'block'; // Default Text dekhalam
   });
 });
+
+// ==================================================
+// Mobile Responsive Toggler Functionality (Done ✅)
+// ==================================================
+servicesBtn.addEventListener('click', function (e) {
+  servicesSection.classList.remove('hidden');
+  historySection.classList.add('hidden');
+})
+
+historyBtn.addEventListener('click', function (e) {
+  historySection.classList.remove('hidden');
+  servicesSection.classList.add('hidden');
+})
